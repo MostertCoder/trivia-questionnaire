@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trivia Questionnaire</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="score-board">
+			<h1>Trivia Questionnaire</h1>
+
+			<div class="score-text">
+				<div class="score-text-correct">
+					<span id="score-correct">0</span>
+					correct
+				</div>
+				<div class="score-text-wrong">
+					<span id="score-wrong">0</span>
+					wrong
+				</div>
+			</div>
+		</div>
+
+		<div class="question-card">
+			<div class="question-text">
+				Question <span id="current-question">3</span> (<span
+					id="remaining-questions"
+					>7</span
+				>
+				remaining)
+			</div>
+
+			<h1 id="question">
+				What does the computer software acronym JVM stand for?
+			</h1>
+
+			<span class="question-text">Answer options</span>
+
+			<button id="answer-1" class="answer">
+				<span class="answer-letter">A</span>
+				<span id="answer-1-text" class="answer-text"
+					>Java Virtual Machine</span
+				>
+			</button>
+			<button id="answer-2" class="answer">
+				<span class="answer-letter">B</span>
+				<span id="answer-2-text" class="answer-text"
+					>Jack Victor Mongo</span
+				>
+			</button>
+			<button id="answer-3" class="answer">
+				<span class="answer-letter">C</span>
+				<span id="answer-3-text" class="answer-text"
+					>JavaScript Virtual Machine</span
+				>
+			</button>
+			<button id="answer-4" class="answer">
+				<span class="answer-letter">D</span>
+				<span id="answer-4-text" class="answer-text"
+					>JS Vim Module</span
+				>
+			</button>
+		</div>
+
+		<div class="results-card">
+			<h1 id="result-text">You Win!</h1>
+			<h2 id="score">66%</h2>
+
+			<button id="restart">Play Again</button>
+		</div>
+	</body>
+</html>
